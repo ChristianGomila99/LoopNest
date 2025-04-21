@@ -27,20 +27,20 @@ window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
 // 4. Validación de formulario y 5. Mensaje de agradecimiento
-const form = document.querySelector('form');
-if (form) {
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const nombre = form.querySelector('input[type="text"]').value.trim();
-    const correo = form.querySelector('input[type="email"]').value.trim();
-    const mensaje = form.querySelector('textarea').value.trim();
+// const form = document.querySelector('form');
+// if (form) {
+//   form.addEventListener('submit', e => {
+//     e.preventDefault();
+//     const nombre = form.querySelector('input[type="text"]').value.trim();
+//     const correo = form.querySelector('input[type="email"]').value.trim();
+//     const mensaje = form.querySelector('textarea').value.trim();
 
-    if (!nombre || !correo || !mensaje) {
-      alert('Por favor completá todos los campos.');
-      return;
-    }
+//     if (!nombre || !correo || !mensaje) {
+//       alert('Por favor completá todos los campos.');
+//       return;
+//     }
 
-    alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
-    form.reset();
-  });
-}
+//     alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
+//     form.reset();
+//   });
+// }
